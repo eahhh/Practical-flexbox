@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>FLEXBOX#1</title>
+    <link rel="stylesheet" href="style3.css">
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            padding: 4px;
+            height: calc(100vh - 8px);
+            gap: 4px;
+        }
+
+        nav, main, aside, footer {
+            border: 1px solid black;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            padding: 4px;
+        }
+
+        .e {
+            display: flex;
+            gap: 4px;
+            align-items: center;
+        }
+
+        .a {
+            display: flex;
+            gap: 4px;
+            align-items: center;
+        }
+
+        .h {
+            background: red;
+            height: 30px;
+            width: 30px;
+        }
+
+        .l {
+            background: red;
+            height: 25px;
+            width: 60px;
+        }
+
+        .o {
+            display: flex;
+            flex-direction: row;
+            flex-grow: 1;
+            gap: 4px;
+        }
+
+        main {
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+            padding: 4px;
+            gap: 4px;
+            width: 75%;
+        }
+
+        .r {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 4px;
+            padding: 4px;
+            border: 1px solid black;
+        }
+
+        .i {
+            display: flex;
+            gap: 10px;
+            justify-content: space-between;
+            padding: 10px;
+            border: 1px solid black;
+        }
+
+        .n {
+            border: 1px solid black;
+            height: 150px;
+            width: 200px;
+        }
+
+        .c {
+            border: 1px solid black;
+            height: 90px;
+            width: 90px;
+        }
+
+        .b {
+            border: 1px solid black;
+            height: 180px;
+            width: 230px;
+        }
+
+        aside {
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+            padding: 4px;
+        }
+
+        .j {
+            display: flex;
+            border: 1px solid black;
+            width: 15vw;
+            height: 5vh;
+        }
+
+        footer {
+            padding: 4px;
+            gap: 4px;
+        }
+
+        .12, .ha {
+            display: flex;
+            gap: 4px;
+            align-items: center;
+        }
+
+        .ha {
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .dog {
+            display: flex;
+            gap: 4px;
+        }
+
+        .cat {
+            background: red;
+            height: 20px;
+            width: 20px;
+        }
+
+        .shessh {
+            padding: 4px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="e">
+            <div class="h"></div>
+            <p>FLEXBOX</p>
+        </div>
+        <div class="a">
+            <div class="l"></div>
+            <div class="l"></div>
+        </div>
+    </nav>
+    <div class="o">
+        <main>
+            <div class="r">
+                <div class="c"></div>
+                <div class="c"></div>
+                <div class="c"></div>
+                <div class="c"></div>
+                <div class="c"></div>
+                <div class="c"></div>
+                <div class="c"></div>
+                <div class="c"></div>
+                <div class="c"></div>
+                <div class="c"></div>
+                <div class="c"></div>
+                <div class="c"></div>
+                <div class="c"></div>
+                <div class="c"></div>
+                <div class="c"></div>
+            </div>
+            <div class="i">
+                <div class="n"></div>
+                <div class="n"></div>
+                <div class="n"></div>
+            </div>
+        </main>
+        <aside>
+            <div class="j"></div>
+            <div class="j"></div>
+            <div class="j"></div>
+            <div class="j"></div>
+            <div class="j"></div>
+            <div class="j"></div>
+            <div class="j"></div>
+            <div class="j"></div>
+            <div class="j"></div>
+            <div class="j"></div>
+        </aside>
+    </div>
+    <footer>
+        <div class="12">
+            <div class="h"></div>
+            <p>FLEXBOX</p>
+        </div>
+        <div class="shessh">
+            <hr>
+        </div>
+        <div class="ha">
+            <div class="dog">
+                <div class="cat"></div>
+                <div class="cat"></div>
+                <div class="cat"></div>
+                <div class="cat"></div>
+                <div class="cat"></div>
+            </div>
+            <p>@Copyright All rights reserved</p>
+        </div>
+    </footer>
+</body>
+</html>

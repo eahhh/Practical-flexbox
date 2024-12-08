@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>FLEXBOX#3</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            padding: 4px;
+            height: calc(100vh - 8px);
+            gap: 4px;
+        }
+
+        nav, main, aside, footer {
+            border: 1px solid black;
+        }
+
+        nav {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            padding: 4px;
+        }
+
+        .e {
+            display: flex;
+            gap: 4px;
+            align-items: center;
+        }
+
+        .a {
+            display: flex;
+            gap: 4px;
+            align-items: center;
+        }
+
+        .h {
+            display: flex;
+            gap: 4px;
+            align-items: center;
+        }
+
+        .c {
+            background: red;
+            height: 30px;
+            width: 50px;
+        }
+
+        .r {
+            background: red;
+            height: 35px;
+            width: 35px;
+        }
+
+        .b {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            flex-grow: 1;
+            gap: 4px;
+        }
+
+        aside {
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+            padding: 4px;
+            width: 20%;
+        }
+
+        .o {
+            display: flex;
+            border: 1px solid black;
+            height: 5vh;
+        }
+
+        .n {
+            border: 1px solid black;
+            display: flex;
+            flex-direction: column;
+            height: 40%;
+        }
+
+        main {
+            display: flex;
+            flex-grow: 1;
+            padding: 4px;
+            gap: 4px;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .l {
+            border: 1px solid black;
+            display: flex;
+            flex-direction: row;
+            height: 30%;
+            width: 10%;
+        }
+
+        footer {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            padding: 4px;
+            gap: 4px;
+        }
+
+        .i {
+            display: flex;
+            gap: 4px;
+            flex-direction: row;
+        }
+
+        .j {
+            background: red;
+            height: 20px;
+            width: 20px;
+        }
+
+        .hakdog {
+            justify-content: center; 
+            padding: 4px;
+        }
+
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="e">
+            <div class="r"></div>
+            <div>
+                <p>FLEXBOX</p>
+            </div>
+        </div>
+
+        <div class="h">
+            <div class="c"></div>
+            <div class="c"></div>
+            <div class="c"></div>
+            <div class="c"></div>
+        </div>
+    </nav>
+
+    <div class="b">
+        <aside>
+            <div class="o"></div>
+            <div class="o"></div>
+            <div class="o"></div>
+            <div class="o"></div>
+            <div class="o"></div>
+            <div class="o"></div>
+            <div class="o"></div>
+            <div class="o"></div>
+            <div class="o"></div>
+            <div class="o"></div>
+        </aside>
+        
+        <main>
+            <div class="l"></div>
+            <div class="l"></div>
+            <div class="l"></div>
+            <div class="l"></div>
+            <div class="l"></div>
+            <div class="l"></div>
+        </main>
+
+        <aside>
+            <div class="n"></div>
+            <div class="n"></div>
+            <div class="n"></div>
+        </aside>
+    </div>
+
+    <footer>
+        <div class="i">
+            <div class="j"></div>
+            <div class="j"></div>
+            <div class="j"></div>
+            <div class="j"></div>
+            <div class="j"></div>
+        </div>
+
+        <div class="hakdog">
+            <div>Copyright Flexbox</div>
+        </div>
+    </footer>
+</body>
+</html>
